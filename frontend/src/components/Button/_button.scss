@@ -1,0 +1,48 @@
+@import 'src/_styleConfig.scss';
+
+.button {
+    background-color: $btnColor2;
+    border: none;
+    border-radius: $borderRadius;
+    padding: 7px 13px;
+    font-weight: 600;
+    color: $txtColor3;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+
+    &.circle {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        border-radius: 50%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .2s;
+    }
+
+    &:hover {
+        background-color: $btnColorHover;
+        // border: 1px solid $btnColor;
+        color: $btnColor;
+        box-shadow: $smallShadow;
+
+    }
+
+    &:focus {
+        background-color: $btnColorHover;
+        color: $color1;
+    }
+
+    // @media $isMobile {
+    //     padding: 5px 10px;
+
+    //     &.circle {
+    //         width: 30px;
+    //         height: 30px;
+    //         font-size: 20px;
+    //     }
+    // }
+}

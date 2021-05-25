@@ -1,0 +1,63 @@
+@import 'src/_styleConfig.scss';
+
+.editProduct {
+    max-width: 350px;
+
+    .trash {
+        display: flex;
+        align-items: center;
+
+        h5 {
+            color: red;
+        }
+
+        svg {
+            cursor: pointer;
+            margin-left: 5px;
+            font-size: 13px;
+        }
+    }
+
+    .sec {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+        label {
+            font-weight: 600;
+            font-size: 14px;
+            margin-left: 10px;
+            min-width: 50px;
+            text-align: right;
+        }
+
+        input {
+            max-width: 150px;
+            height: 20px;
+            border: none;
+            padding: 2px 5px;
+        }
+
+        textarea {
+            resize: no ne;
+        }
+    }
+
+}
+
+input[type=submit] {
+    width: 100%;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: $smallShadow;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: $bgColor;
+
+    &:hover {
+        box-shadow: $shadow;
+
+    }
+}

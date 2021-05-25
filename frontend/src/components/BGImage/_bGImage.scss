@@ -1,0 +1,9 @@
+@import 'src/_styleConfig.scss';
+
+.bGImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: $borderRadius;
+    flex-shrink: 0;
+}

@@ -1,0 +1,22 @@
+@import 'src/_styleConfig.scss';
+
+.card {
+    padding: 20px;
+    background-color: $bgColorBox;
+    border-radius: $borderRadius;
+    //transition: .2s;
+    box-shadow: $smallShadow;
+
+
+    .h3 {
+        font-size: 24px;
+        width: 100%;
+        font-weight: 600;
+        color: $txtColor;
+        margin-bottom: 15px;
+        margin-top: -5px;
+        display: flex;
+        align-items: center;
+        justify-content: unset;
+    }
+}

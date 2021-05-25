@@ -1,0 +1,62 @@
+.dilema {
+    position: relative;
+
+    .bubble {
+        position: absolute;
+        bottom: 30px;
+        right: calc(50% - 75px);
+        background: #fff;
+        width: 150px;
+        box-shadow: 7px 5px 20px 0px rgba(0, 0, 0, .33);
+        border-radius: 10px;
+        padding: 10px;
+        animation: fadein .1s ease-out;
+
+        h4 {
+            margin-bottom: 5px;
+            user-select: none;
+            margin-top: 0;
+        }
+
+        .btnsDilem {
+            display: flex;
+
+            button {
+                user-select: none;
+                width: 50%;
+                flex-shrink: 0;
+                text-align: center;
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: #f1f1f1;
+                }
+            }
+        }
+    }
+
+    .downIcon {
+        position: absolute;
+        bottom: -9px;
+        color: #fff;
+        font-size: 18px;
+        right: calc(50% - 10px);
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 20px;
+        opacity: 0;
+        transform: scale(.97);
+    }
+
+    to {
+        transform: scale(1);
+        bottom: 30px;
+        opacity: 1;
+    }
+}

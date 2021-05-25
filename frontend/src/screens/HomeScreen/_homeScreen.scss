@@ -1,0 +1,38 @@
+@import 'src/_styleConfig.scss';
+
+.home {
+    margin: 20px 0;
+    max-width: 1130px;
+    margin: auto;
+
+    .cardBanner {
+        display: flex;
+        background-color: antiquewhite;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 40px;
+            margin: 0;
+            color: #352f82;
+        }
+
+        span {
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        button {
+            margin: 0;
+            margin-top: 10px;
+            background-color: #c2a792;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+}

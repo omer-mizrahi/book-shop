@@ -1,0 +1,22 @@
+@import 'src/_styleConfig.scss';
+
+.content {
+
+    // flex: 0.70;
+
+    h2 {
+        font-size: 36px;
+        margin: 0;
+        color: #0c074d;
+        padding: 10px 5px;
+
+    }
+
+
+    .productsList {
+        padding: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: center;
+    }
+}

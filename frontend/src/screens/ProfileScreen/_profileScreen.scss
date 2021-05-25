@@ -1,0 +1,40 @@
+.profileScreen {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px 0;
+
+    .cardRight {
+        flex: 0.25;
+        margin-left: 40px;
+    }
+
+    .cardLeft {
+        flex: 0.75;
+    }
+
+    .cardRight,
+    .cardLeft {
+        .secTitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+                margin: 0;
+                font-size: 20px;
+            }
+        }
+    }
+
+
+    .secInfo {
+        text-align: center;
+
+        .image {
+            border-radius: 50%;
+            margin: auto;
+            border: 5px solid #f2f2f6;
+        }
+    }
+
+}

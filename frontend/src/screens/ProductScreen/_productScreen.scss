@@ -1,0 +1,49 @@
+.row {
+    display: flex;
+    // justify-content: space-between;
+
+    .names {
+
+        padding: 10px 0;
+
+        h2 {
+            font-size: 40px;
+            margin: 0 0 5px 0;
+        }
+
+        h3 {
+            font-weight: 200;
+            color: green;
+            margin: 0;
+
+        }
+    }
+
+    .secInfo {
+        margin: 10px 0;
+
+    }
+
+    label {
+        font-weight: 600;
+        margin-left: 5px;
+    }
+
+    .borderToCart {
+        max-width: 250px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f2f2f6;
+        box-shadow: 0 0 10px #9c9c9c40;
+        margin: 20px 0;
+
+        div {
+            padding: 10px;
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+
+}

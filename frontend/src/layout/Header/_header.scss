@@ -1,0 +1,98 @@
+@import 'src/_styleConfig.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #282828;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 20px 0;
+    align-items: center;
+    z-index: 1;
+    max-width: 1210px;
+    margin: auto;
+
+    .linkNav {
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-left: 5px;
+            font-size: 20px;
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+
+        .user {
+            .userBtn {
+                background-color: #f2f2f6;
+                padding: 10px 15px;
+                border-radius: 50%;
+                box-shadow: 0 0 2px #d8d7d7;
+                position: relative;
+                cursor: pointer;
+                margin-left: 10px;
+
+                h4 {
+                    margin: 0;
+                    font-size: 14px;
+                    color: $bgColor;
+                }
+
+                svg {
+                    font-size: 14px;
+                }
+
+                .userLinks {
+                    padding: 10px;
+                    position: absolute;
+                    right: 10px;
+                    top: 45px;
+                    box-shadow: $shadow;
+                }
+
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+
+                    li {
+                        font-size: 14px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        padding: 5px 10px;
+                        border-radius: $borderRadius;
+                        min-width: 80px;
+
+                        &:hover {
+                            background-color: $bgColor;
+                        }
+                    }
+                }
+            }
+        }
+
+        // .user {
+        //     display: flex;
+        //     align-items: center;
+
+        //     h6 {
+        //         margin-right: 5px;
+        //         text-decoration: underline;
+        //         cursor: pointer;
+        //         padding-top: 5px;
+        //     }
+        // }
+
+        .headerCart {
+            cursor: pointer;
+            position: relative;
+        }
+    }
+
+}
