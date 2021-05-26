@@ -1,9 +1,8 @@
 @import 'src/_styleConfig.scss';
 
 .filters {
-    background-color: #f2f2f6;
+    background-color: $bgColor;
     margin-left: 20px;
-    // box-shadow: $smallShadow;
     border-radius: 5px;
     padding: 5px 10px;
 

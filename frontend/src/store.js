@@ -4,7 +4,7 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import { productListReducer, productDetailsReducer, updateProductDetailsReducer, deleteProductReducer, createProductReducer } from './reducers/productReducers'
 import { cartReducer } from './reducers/cartReducers'
 import { userDetailsReducer, userLoginReducer, userRegisterReducer } from './reducers/userReducers'
-import { orderCreateReducers } from './reducers/orderReducers'
+import { orderCreateReducers, ordersReducers } from './reducers/orderReducers'
 
 const reducer = combineReducers({
   productList: productListReducer,
@@ -16,11 +16,9 @@ const reducer = combineReducers({
   updateProductDetails: updateProductDetailsReducer,
   deleteProduct: deleteProductReducer,
   createProduct: createProductReducer,
-  orderCreate: orderCreateReducers
+  orderCreate: orderCreateReducers,
+  listOrders: ordersReducers
 })
-
-// const cartItemsFromStorage = localStorage.getItem('cartItems') ?
-//   JSON.parse(localStorage.getItem('cartItems')) : []
 
 const userInfoFromStorage = localStorage.getItem('userInfo') ?
   JSON.parse(localStorage.getItem('userInfo')) : null
@@ -37,6 +35,5 @@ const store = createStore(
   initialState,
   composeWithDevTools(applyMiddleware(...middleware))
 )
-
 
 export default store

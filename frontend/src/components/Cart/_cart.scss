@@ -7,7 +7,7 @@
     left: 10px;
     top: 130px;
     max-width: 300px;
-    background-color: white;
+    background-color: $bgColorBox;
     box-shadow: 0 0 5px #0000003b;
     border-radius: 5px;
     max-width: 350px;
@@ -38,7 +38,7 @@
         padding: 0 20px;
 
         button {
-            background-color: antiquewhite;
+            background-color: $bgColor2;
             color: #352f82;
             font-weight: 800;
             font-size: 15px;
@@ -48,7 +48,6 @@
         .sum {
             display: flex;
             align-items: center;
-            // background-color: #ffc166;
             padding: 0 10px;
             border-bottom-right-radius: 5px;
             border-bottom-left-radius: 5px;
@@ -86,11 +85,10 @@
 .needLogin {
     font-size: 12px;
     text-align: center;
-    color: red;
+    color: $error-color;
     font-weight: 600;
 }
 
 .cartOpen {
     opacity: 1;
-    // pointer-events: auto;
 }

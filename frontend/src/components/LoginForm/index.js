@@ -12,13 +12,12 @@ function LoginForm({ setShow, show }) {
 
     const dispatch = useDispatch()
 
-
     const submitHandler = (e) => {
         e.preventDefault()
         dispatch(login(email, password))
         setShow(false)
-        // window.location.reload()
     }
+
     return (
         <Form onSubmit={submitHandler}>
             <div className='loginForm'>
@@ -28,7 +27,7 @@ function LoginForm({ setShow, show }) {
                 </div>
                 <div className='sec'>
                     <label>סיסמא</label>
-                    <input value={password} onChange={(e) => setPassword(e.target.value)} name='password' placeholder='הכנס סיסמא' />
+                    <input type='password' value={password} onChange={(e) => setPassword(e.target.value)} name='password' placeholder='הכנס סיסמא' />
                 </div>
             </div>
         </Form>

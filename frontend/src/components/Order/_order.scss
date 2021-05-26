@@ -1,0 +1,35 @@
+@import 'src/_styleConfig.scss';
+
+.order {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+    align-items: center;
+
+    .listItems {
+        max-height: 100px;
+        overflow: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px;
+        flex: 0.80;
+    }
+
+    .sumOrder {
+        flex: 0.2;
+        text-align: center;
+
+        h4 {
+            background-color: $bgColor2;
+            padding: 8px 5px;
+            border-radius: 20px;
+            margin: auto;
+            max-width: 100px;
+        }
+
+        span {
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+}

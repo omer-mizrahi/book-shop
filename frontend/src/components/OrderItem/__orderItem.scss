@@ -1,0 +1,27 @@
+@import 'src/_styleConfig.scss';
+
+.orderItem {
+    display: flex;
+    margin: 10px;
+
+    img {
+        width: 40px;
+        height: 60px;
+        border-radius: $smallBorderRadius;
+        margin-left: 10px;
+    }
+
+    h4 {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    h6 {
+        margin: 0;
+    }
+
+    .amount {
+        font-size: 10px;
+    }
+}

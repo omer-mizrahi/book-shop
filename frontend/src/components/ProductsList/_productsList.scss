@@ -2,14 +2,22 @@
 
 .content {
 
-    // flex: 0.70;
+    .tAndS {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
 
-    h2 {
-        font-size: 36px;
-        margin: 0;
-        color: #0c074d;
-        padding: 10px 5px;
+        h2 {
+            font-size: 36px;
+            margin: 0;
+            // color: #0c074d;
+            color: $txtColor2;
+        }
 
+        .searchProducts {
+            max-width: 250px;
+        }
     }
 
 
@@ -17,6 +25,5 @@
         padding: 10px 0;
         display: flex;
         flex-wrap: wrap;
-        // justify-content: center;
     }
 }

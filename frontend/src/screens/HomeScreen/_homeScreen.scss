@@ -7,7 +7,7 @@
 
     .cardBanner {
         display: flex;
-        background-color: antiquewhite;
+        background-color: $bgColor2;
         justify-content: space-around;
         align-items: center;
         margin-bottom: 20px;
@@ -15,7 +15,7 @@
         h2 {
             font-size: 40px;
             margin: 0;
-            color: #352f82;
+            color: $titleColor;
         }
 
         span {
@@ -26,7 +26,13 @@
         button {
             margin: 0;
             margin-top: 10px;
-            background-color: #c2a792;
+            background-color: $btnColor;
+            color: $txtColor4;
+
+            &:hover {
+                background-color: $bgColorBox !important;
+                color: $titleColor;
+            }
         }
 
         img {

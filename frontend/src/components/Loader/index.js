@@ -1,5 +1,4 @@
 import React from 'react'
-// import style from './loader.less'
 import './_loader.scss'
 
 const Loader = ({ className = '', size }) =>

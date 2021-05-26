@@ -15,7 +15,6 @@ function Header() {
     const [show, setShow] = useState(false)
     const [showLinkUser, setShowLinkUser] = useState(false)
 
-
     const dispatch = useDispatch()
 
     const userLogin = useSelector(state => state.userLogin)
@@ -41,8 +40,9 @@ function Header() {
                     >{userInfo ? <h4>{userInfo.name.charAt(0)} </h4> : <BsFillPersonFill />}
                         {showLinkUser && <Card className='userLinks'>
                             <ul>
-                                <Link to={`/profile/${userInfo?._id}`}> <li>הצג פרופיל</li></Link>
+                                {!Admin && <Link to={`/profile/${userInfo?._id}`}> <li>הצג פרופיל</li></Link>}
                                 <Link to='/'><li onClick={logoutHandler}>התנתק</li></Link>
+                                {Admin && <h6 className='noteAdmin'>מנהל יקר, הינך יכול לערוך מוצרים בדף זה</h6>}
                             </ul>
                         </Card>}
                     </div>

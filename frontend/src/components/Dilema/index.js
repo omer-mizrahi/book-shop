@@ -9,7 +9,7 @@ const Dilema = ({ className = '', q, icon, onOk, onCancel }) => {
         setOpen(false)
     }
 
-    return <div className='dilema' onClick={e => e.stopPropagation()}>
+    return <div className={`${className} dilema`} onClick={e => e.stopPropagation()}>
         <div onClick={() => setOpen(!open)}>{icon}</div>
         {open && <div className='bubble'>
             <h4>{q}</h4>

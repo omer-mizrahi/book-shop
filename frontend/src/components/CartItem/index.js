@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import BGImage from '../BGImage'
 import { useDispatch, useSelector } from 'react-redux';
 import './_cartItem.scss'

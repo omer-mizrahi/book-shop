@@ -13,7 +13,6 @@ function AddProduct({ setShow, show }) {
 
     const submitHandler = (e) => {
         e.preventDefault()
-        // console.log('data', product)
         dispatch(createProduct(product))
         setShow(false)
         window.location.reload()

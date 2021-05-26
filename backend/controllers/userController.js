@@ -11,6 +11,7 @@ const authUser = asyncHandler(async (req, res) => {
         res.json({
             _id: user._id,
             name: user.name,
+            image: user.image,
             email: user.email,
             isAdmin: user.isAdmin,
             token: generateToken(user._id)

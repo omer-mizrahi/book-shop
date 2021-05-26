@@ -7,8 +7,9 @@ import { FiTrash } from 'react-icons/fi'
 import { FcApproval } from 'react-icons/fc'
 import Button from '../Button'
 import { cleanCart } from '../../actions/cartActions'
+import { createOrder } from '../../actions/orderActions'
 
-function Cart({ className = '', cartOpen, history }) {
+function Cart({ className = '', cartOpen }) {
     const dispatch = useDispatch()
     const [sum, setSum] = useState(0)
 
@@ -35,11 +36,17 @@ function Cart({ className = '', cartOpen, history }) {
             setNeedLogin(false)
             setHaveOrder(true)
 
+            dispatch(createOrder({
+                orderItems: cartItems,
+                totalPrice: sum
+            }))
+
             setTimeout(() => {
                 window.location.reload()
             }, 2000)
         }
     }
+
     const cleanCarnHandler = () => {
         dispatch(cleanCart())
     }
@@ -49,17 +56,15 @@ function Cart({ className = '', cartOpen, history }) {
     }, [cartItems, calcCartSum])
 
 
-
     return (
-
-        <Card className={`cart ${cartOpen ? 'cartOpen' : ''}`}>
+        <Card className={`${className} cart ${cartOpen ? 'cartOpen' : ''}`}>
             <div className='first'>
                 <h2>{cartItems.length > 0 ? 'העגלה שלי' : 'העגלה שלך ריקה'}</h2>
                 {cartItems.length > 0 && <FiTrash onClick={cleanCarnHandler} />}
             </div>
             <div className='listItems'>
                 {cartItems.map(item => (
-                    <CartItem key={item._id} item={item} />
+                    <CartItem key={item.id} item={item} />
                 ))}
             </div>
 
@@ -72,7 +77,7 @@ function Cart({ className = '', cartOpen, history }) {
                         </div>
                         <Button onClick={submitPay}>אישור ותשלום</Button>
                     </div>
-                    <div className='needLogin'>{needLogin ? '*יש להתחבר לפני ביצוע הזמנה*' : ''}</div>
+                    <div className='needLogin'>{needLogin ? 'יש להתחבר לפני ביצוע הזמנה' : ''}</div>
 
                     {haveOrder && <div className='haveOrder'>
                         <h3>תשלום בוצע!</h3>

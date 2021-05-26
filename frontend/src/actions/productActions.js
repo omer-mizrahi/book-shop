@@ -51,7 +51,6 @@ export const updateProductDetails = (product) => async (dispatch) => {
         dispatch({ type: PRODUCT_DETAILS_REQUEST })
 
         const { data } = await axios.patch(`/api/products/${product._id}`, product)
-        // const { data } = await axios.post('/api/users', { name, email, password }, config)
 
         dispatch({
             type: PRODUCT_DETAILS_SUCCESS,
@@ -74,7 +73,6 @@ export const deleteProduct = (id) => async (dispatch) => {
         dispatch({ type: DELETE_PRODUCT_REQUEST })
 
         const { data } = await axios.delete(`/api/products/${id}`)
-        // const { data } = await axios.post('/api/users', { name, email, password }, config)
 
         dispatch({
             type: DELETE_PRODUCT_SUCCESS,
@@ -97,7 +95,6 @@ export const createProduct = (product) => async (dispatch) => {
         dispatch({ type: CREATE_PRODUCT_REQUEST })
 
         const { data } = await axios.post(`/api/products`, product)
-        // const { data } = await axios.post('/api/users', { name, email, password }, config)
 
         dispatch({
             type: CREATE_PRODUCT_SUCCESS,

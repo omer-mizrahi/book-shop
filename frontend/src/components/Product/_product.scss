@@ -2,16 +2,13 @@
 
 .product {
     margin: 13px;
-    // width: 250px;
     text-align: center;
-    // box-shadow: $smallShadow;
     border-radius: $borderRadius;
     cursor: pointer;
     position: relative;
     text-align: right;
 
     .image {
-        // margin: auto;
         height: 250px !important;
     }
 
@@ -38,7 +35,6 @@
         }
     }
 
-
     .btns {
         display: flex;
         align-items: center;
@@ -47,47 +43,10 @@
         span {
             padding: 0 10px;
         }
-
-        button {
-            width: 100%;
-            background-image: linear-gradient(45deg, #f2f2f6, white, #f2f2f6);
-            // background-color: $bgColor;
-            color: #282828;
-            border-radius: 0;
-            border-top: 1px solid #59cfb9;
-
-            svg {
-                font-size: 14px;
-            }
-        }
-    }
-
-    // .price {
-    //     position: absolute;
-    //     background-color: #ffc166;
-    //     padding: 8px 14px;
-    //     left: 0;
-    //     bottom: 50%;
-    //     border-bottom-right-radius: 20px;
-    //     border-top-right-radius: 20px;
-    //     font-weight: 600;
-    //     font-size: 13px;
-    // }
-
-    .sale {
-        position: absolute;
-        background-color: #f1979a;
-        padding: 6px 10px;
-        left: 0;
-        bottom: 38%;
-        border-bottom-right-radius: 20px;
-        border-top-right-radius: 20px;
-        font-weight: 600;
-        font-size: 12px;
     }
 
     .add {
-        background-color: #ffffff;
+        background-color: $bgColorBox;
         padding: 8px 10px 1px 10px;
         border-radius: 50%;
         position: absolute;
@@ -99,7 +58,7 @@
             right: -2px;
             top: -3px;
             font-size: 12px;
-            background-color: white;
+            background-color: $bgColorBox;
             color: #352f82;
             padding: 5px;
             border-radius: 50%;
@@ -107,50 +66,7 @@
         }
 
         svg {
-            color: #352f82;
+            color: $titleColor;
         }
-
     }
-
-    // &.editMode:nth-child(even) {
-    //     animation-delay: -.5s;
-    //     animation-duration: .3s;
-    //     animation-name: keyframes1;
-    //     animation-iteration-count: infinite;
-    //     animation-direction: alternate;
-    //     transform-origin: 30% 5%;
-    // }
-
-    // &.editMode:nth-child(odd) {
-    //     animation-delay: -.5s;
-    //     animation-duration: .3s;
-    //     animation-name: keyframes2;
-    //     animation-iteration-count: infinite;
-    //     animation-direction: alternate;
-    //     transform-origin: 30% 5%;
-    // }
-
-    // @keyframes keyframes1 {
-    //     0% {
-    //         transform: rotate(-1deg);
-    //         animation-timing-function: ease-in;
-    //     }
-
-    //     50% {
-    //         transform: rotate(1.5deg);
-    //         animation-timing-function: ease-out;
-    //     }
-    // }
-
-    // @keyframes keyframes2 {
-    //     0% {
-    //         transform: rotate(1deg);
-    //         animation-timing-function: ease-in;
-    //     }
-
-    //     50% {
-    //         transform: rotate(-1.5deg);
-    //         animation-timing-function: ease-out;
-    //     }
-    // }
 }

@@ -23,13 +23,6 @@ function EditProduct({ setShow, show, item = {} }) {
         window.location.reload()
     }
 
-    // const inputs = ['name', 'price', 'category', 'description'].map(key =>
-    //     <div key={key}>
-    //         <label>{key}</label>
-    //         <input name={key} placeholder={key} defaultValue={product[key]} required />
-    //     </div>
-    // )
-
     return (
         <Form onSubmit={submitHandler}>
             <div className='editProduct'>

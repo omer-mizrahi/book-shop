@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import './_productScreen.scss'
@@ -16,8 +16,6 @@ function ProductScreen({ match }) {
         dispatch(listProductDetails(match.params.id))
     }, [dispatch, match])
 
-
-
     return (
         <>
             <Link to='/' >חזור</Link>
@@ -25,7 +23,6 @@ function ProductScreen({ match }) {
                 <div>
                     <BGImage url={product.image} size={500} />
                 </div>
-
                 <div>
                     <div className='names'>
                         <h2>{product.name}</h2>
@@ -66,7 +63,7 @@ function ProductScreen({ match }) {
                         <div>
                             <label>סטטוס:</label>
                             <span>
-                                {product.countInStock != 0 ? 'זמין במלאי' : 'אזל המלאי'}
+                                {product.countInStock !== 0 ? 'זמין במלאי' : 'אזל המלאי'}
                             </span>
                         </div>
                         <div>

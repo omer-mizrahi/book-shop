@@ -2,7 +2,6 @@
 
 .addProduct {
     max-width: 350px;
-
     .sec {
         display: flex;
         align-items: center;
@@ -28,22 +27,4 @@
             resize: none;
         }
     }
-
 }
-
-// input[type=submit] {
-//     width: 100%;
-//     border: none;
-//     padding: 7px 10px;
-//     border-radius: 10px;
-//     font-size: 14px;
-//     box-shadow: $smallShadow;
-//     margin: 5px 0;
-//     cursor: pointer;
-//     background-color: $bgColor;
-
-//     &:hover {
-//         box-shadow: $shadow;
-
-//     }
-// }

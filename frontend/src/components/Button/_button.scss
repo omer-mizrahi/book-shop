@@ -25,7 +25,6 @@
 
     &:hover {
         background-color: $btnColorHover;
-        // border: 1px solid $btnColor;
         color: $btnColor;
         box-shadow: $smallShadow;
 
@@ -36,13 +35,4 @@
         color: $color1;
     }
 
-    // @media $isMobile {
-    //     padding: 5px 10px;
-
-    //     &.circle {
-    //         width: 30px;
-    //         height: 30px;
-    //         font-size: 20px;
-    //     }
-    // }
 }

@@ -30,7 +30,6 @@ export const productListReducer = (state = { products: [] }, action) => {
 
 }
 
-
 export const productDetailsReducer = (
     state = { product: { reviews: [] } },
     action
@@ -45,7 +44,6 @@ export const productDetailsReducer = (
         default:
             return state
     }
-
 }
 
 export const updateProductDetailsReducer = (
@@ -62,7 +60,6 @@ export const updateProductDetailsReducer = (
         default:
             return state
     }
-
 }
 
 export const deleteProductReducer = (
@@ -79,7 +76,6 @@ export const deleteProductReducer = (
         default:
             return state
     }
-
 }
 
 export const createProductReducer = (
@@ -96,6 +92,5 @@ export const createProductReducer = (
         default:
             return state
     }
-
 }
 

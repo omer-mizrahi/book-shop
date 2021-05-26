@@ -11,10 +11,10 @@ function HomeScreen() {
             <Card className='cardBanner'>
                 <div>
                     <h2>הגיע הזמן להתחיל לקרוא</h2>
-                    <span>קריאת ספרים משפרת את האינטלגנציה שלך</span>
+                    <span>קריאת ספרים משפרת את האינטליגנציה שלך</span>
                     <Button>ראה הכל</Button>
                 </div>
-                <img src={BookingImag} />
+                <img src={BookingImag} alt='banner' />
             </Card>
             <ProductsList />
         </div>

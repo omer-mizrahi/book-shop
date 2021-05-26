@@ -8,7 +8,7 @@
         align-items: center;
 
         h5 {
-            color: red;
+            color: $error-color;
         }
 
         svg {
@@ -39,7 +39,7 @@
         }
 
         textarea {
-            resize: no ne;
+            resize: none;
         }
     }
 
