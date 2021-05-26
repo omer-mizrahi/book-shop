@@ -26,7 +26,7 @@ app.use('/api/orders', orderRoutes)
 // app.get('*', (req, res) => res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html')))
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('build'))
+    app.use(express.static('backend/build'))
 }
 
 app.use('/assets', express.static(__dirname + '/assets'))
@@ -34,7 +34,7 @@ app.use('/assets', express.static(__dirname + '/assets'))
 app.use('/', express.static(__dirname + '/root'))
 
 app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build/index.html'), err => {
+    res.sendFile(path.join(__dirname, 'backend/build/index.html'), err => {
         if (err) {
             res.status(500).send(err)
         }
