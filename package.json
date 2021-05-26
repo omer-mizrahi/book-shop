@@ -4,7 +4,7 @@
   "description": "book shop",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server",
+    "start": "node backend/server.js",
     "server": "node backend/server",
     "client": "cd frontend/ && npm start --perfix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
