@@ -23,14 +23,12 @@ const __dirname = path.resolve()
 app.use(express.static(path.join(_dirname)))
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '/frontend/build')))
-    app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html')))
+    app.use(express.static('/frontend/build'))
 }
-else {
-    app.get('/', (req, res) => {
-        res.send('Api is running')
-    })
-}
+app.use('/assets', express.static(__dirname + '/assets'))
+app.use('/', express.static(__dirname + '/root'))
+
+app.get('/*', (req, res) => res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html')))
 
 app.use(notFound)
 
