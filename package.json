@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
-    "server": "node backend/server",
+    "server": "node backend/server.js",
     "client": "cd frontend/ && npm start --perfix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder",

@@ -23,6 +23,8 @@ app.use('/api/orders', orderRoutes)
 // const __dirname = path.resolve()
 // app.use(express.static(path.join(_dirname)))
 
+// app.get('*', (req, res) => res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html')))
+
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('/frontend/build'))
 }
@@ -39,7 +41,6 @@ app.get('/*', (req, res) => {
     })
 })
 
-// app.get('*', (req, res) => res.sendFile(path.join(__dirname, 'frontend', 'build', 'index.html')))
 
 app.use(notFound)
 
