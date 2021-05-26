@@ -20,7 +20,7 @@ app.use('/api/users', userRoutes)
 app.use('/api/orders', orderRoutes)
 
 const _dirname = path.resolve()
-app.use('/uploads', express.static(path.join(_dirname, '/uploads')))
+app.use(express.static(path.join(_dirname)))
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(_dirname, '/frontend/build')))
