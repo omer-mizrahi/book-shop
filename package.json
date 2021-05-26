@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "book shop",
   "main": "server.js",
-  "type": "module",
   "scripts": {
     "start": "node backend/server",
     "server": "node backend/server",
