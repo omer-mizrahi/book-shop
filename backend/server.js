@@ -20,12 +20,12 @@ app.use('/api/products', productRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/orders', orderRoutes)
 
-const __dirname = path.resolve()
-app.use(express.static(path.join(_dirname)))
-
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('/frontend/build'))
 }
+// const __dirname = path.resolve()
+// app.use(express.static(path.join(_dirname)))
+
 app.use('/assets', express.static(__dirname + '/assets'))
 app.use('/', express.static(__dirname + '/root'))
 
