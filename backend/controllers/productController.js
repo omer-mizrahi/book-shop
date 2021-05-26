@@ -1,6 +1,6 @@
-import asyncHandler from 'express-async-handler'
-import Product from '../models/productModel.js'
-import mongoose from 'mongoose'
+const asyncHandler = require('express-async-handler')
+const Product = require('../models/productModel')
+const mongoose = require('mongoose')
 
 const getProducts = asyncHandler(async (req, res) => {
     const products = await Product.find({})
@@ -94,4 +94,4 @@ const createProduct = asyncHandler(async (req, res) => {
 
 })
 
-export { getProducts, getProductById, updateProduct, deleteProduct, createProduct }
+module.exports = { getProducts, getProductById, updateProduct, deleteProduct, createProduct }

@@ -1,6 +1,6 @@
-import express from 'express'
+const express = require('express')
 const router = express.Router()
-import { addOrderItems, getOrders } from '../controllers/orderController.js'
+const { addOrderItems, getOrders } = require('../controllers/orderController')
 // import { protect } from '../middleware/authMiddleware.js'
 
 
@@ -8,4 +8,4 @@ router.route('/').get(getOrders)
 router.route('/').post(addOrderItems)
 
 
-export default router
+module.exports = router
