@@ -1,12 +1,12 @@
 @import 'src/_styleConfig.scss';
 
 .button {
-    background-color: $btnColor2;
+    background-color: $bgColor2;
     border: none;
     border-radius: $borderRadius;
     padding: 7px 13px;
     font-weight: 600;
-    color: $txtColor3;
+    color: $titleColor;
     margin: auto;
     display: block;
     cursor: pointer;
